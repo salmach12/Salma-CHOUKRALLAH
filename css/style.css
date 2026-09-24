@@ -19,12 +19,12 @@
 html{scroll-behavior:smooth;}
 
 body{
-  /* This layers a soft cream color OVER your background image */
+  
   background-image: 
     linear-gradient(rgba(242, 234, 217, 0.85), rgba(242, 234, 217, 0.85)),
     url('images/background.jpg');
   background-size: cover;
-  background-attachment: fixed; /* Keeps the background still while you scroll */
+  background-attachment: fixed; 
   background-position: center;
   
   color:var(--ink);
@@ -161,24 +161,23 @@ section{padding:100px 8vw;position:relative;}
   font-size:1.08rem;color:#4b4030;
 }
   .hero-title, .hero-sub {
-    text-shadow: 0 0 10px rgba(242, 234, 217, 0.9); /* soft cream glow around the text */
+    text-shadow: 0 0 10px rgba(242, 234, 217, 0.9); 
   }
 .hero-actions{margin-top:40px;display:flex;gap:16px;flex-wrap:wrap;}
-  /* --- CUTE IMAGE BUTTONS --- */
-   /* --- CUTE IMAGE BUTTONS --- */
+ 
     .btn {
     background-image: url('../images/button-pink.png');
-    background-size: contain; /* Keeps the shape, does NOT stretch it */
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
     border: none;
     
-    /* Give the button a fixed size so the shape stays perfect */
+  
     width: 170px;
     height: 110px;
     
-    /* Center the text inside the button */
+    
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -191,7 +190,7 @@ section{padding:100px 8vw;position:relative;}
     text-decoration: none;
     text-shadow: 0 1px 2px rgba(255,255,255,0.8);
     cursor: pointer;
-    padding: 0; /* Remove padding so it doesn't push the shape */
+    padding: 0; 
     transition: transform 0.2s ease, filter 0.2s ease;
   }
 
@@ -224,7 +223,7 @@ section{padding:100px 8vw;position:relative;}
     font-size:1.6rem;
     color:#7a6a4f;
     border-radius:2px;
-    overflow: hidden; /* NEW: keeps the image inside the frame */
+    overflow: hidden; 
   }
   
 .collage-item span{font-family:'Caveat',cursive;font-size:.75rem;position:absolute;bottom:-20px;color:#5c5140;white-space:nowrap;}
@@ -636,7 +635,7 @@ footer{text-align:center;padding:20px;font-size:.75rem;color:#7a8563;background:
       .lily-bg {
     position: absolute;
     top: 50%;
-    left: 65%; /* MOVED RIGHT: was 58% */
+    left: 65%;
     transform: translate(-50%, -50%) rotate(-10deg);
     width: 60vw;
     max-width: 700px;
@@ -649,12 +648,11 @@ footer{text-align:center;padding:20px;font-size:.75rem;color:#7a8563;background:
     position: absolute;
     pointer-events: none; 
     z-index: 1; 
-    opacity: 0.6; /* A bit more visible */
+    opacity: 0.6; 
     width: 100px !important; 
     height: auto !important;
   }
 
-  /* You can customize each lily's size, place, and tilt! */
   .l1 { width: 120px; top: 10%;  left: 5%;  transform: rotate(-20deg); }
   .l2 { width: 80px;  top: 25%;  right: 8%; transform: rotate(15deg) scaleX(-1); }
   .l3 { width: 150px; bottom: 10%; left: 10%; transform: rotate(45deg); }
