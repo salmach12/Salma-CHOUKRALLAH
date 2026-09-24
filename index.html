@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initialphoto-scale=1.0">
+<title>Salma Choukrallah — Field Notes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Work+Sans:wght@300;400;500;600&family=Caveat:wght@500;600;700&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <img src="images/lily.png" class="lily-decor lily-top" alt="lily">
+<img src="images/lily.png" class="lily-decor lily-bottom" alt="lily">
+
+<nav>
+  <div class="nav-mark">SALMA Choukrallah</div>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#code">Code</a></li>
+    <li><a href="#music">Music</a></li>
+    <li><a href="#books">Books</a></li>
+    <li><a href="#travel">Travel</a></li>
+    <li><a href="#photos">Photos</a></li>
+    <li><a href="#camera-roll">Roll</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+<section id="home">
+  
+  <!-- 1. BIG BACKGROUND LILY -->
+  <img src="images/lily-bg.png" class="lily-bg" alt="big lily background">
+  
+  <!-- 2. SMALL LILY STICKERS (outside the collage!) -->
+  <img src="images/lily.png" class="lily-decor l1" alt="lily">
+  <img src="images/lily.png" class="lily-decor l2" alt="lily">
+  <img src="images/lily.png" class="lily-decor l3" alt="lily">
+  <img src="images/lily.png" class="lily-decor l4" alt="lily">
+  <img src="images/lily.png" class="lily-decor l5" alt="lily">
+  <img src="images/lily.png" class="lily-decor l6" alt="lily">
+
+  <!-- 3. POLAROID PHOTOS -->
+  <div class="collage" aria-hidden="true">
+    <div class="collage-item c1">
+      <div class="washi"></div>
+      <img src="images/collage1.jpg" alt="desk">
+      <span>my desk, 11pm</span>
+    </div>
+    <div class="collage-item c2">
+      <img src="images/collage2.jpg" alt="coffee">
+    </div>
+    <div class="collage-item c3">
+      <div class="washi"></div>
+      <img src="images/collage3.jpg" alt="music">
+      <span>on repeat</span>
+    </div>
+    <div class="collage-item c4">
+      <img src="images/collage4.jpg" alt="book">
+    </div>
+    <div class="collage-item c5">
+      <div class="washi"></div>
+      <img src="images/collage5.jpg" alt="film">
+      <span>developed film</span>
+    </div>
+  </div>
+
+  <!-- 4. HERO TEXT (This was missing entirely!) -->
+  <p class="hero-loc">📍 Currently in Chengdu, China</p>
+  <h1 class="hero-title">Hi, I'm <em>Salma<svg class="underline" viewBox="0 0 200 14" preserveAspectRatio="none"><path d="M2 10 C 40 2, 90 14, 130 6 S 190 2, 198 8" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/></svg></em>.</h1>
+  <p class="hero-sub">Third-year Software Engineering student. Moroccan, currently somewhere between China, code, coffee, music, books and the next adventure.</p>
+  <div class="hero-actions">
+   <a href="#about" class="btn btn-img">Enter my world</a>
+<a href="#code" class="btn btn-img">Projects</a>
+<a href="#camera-roll" class="btn btn-img">✦ My camera roll</a>
+  </div>
+
+</section>
+<section id="about">
+  <p class="section-tag">Morocco → China</p>
+  <h2 class="section-title">About me</h2>
+  <div class="about-grid">
+    <div class="about-photo-col">
+      <figure class="polaroid">
+        <div class="washi pink"></div>
+        <div class="ph"><img src="images/about-photo.jpg" alt="First week in Chengdu"></div>
+        <figcaption></figcaption>
+      </figure>
+      <div class="about-labels">
+        <span class="label-chip">Morocco → China</span>
+        <span class="label-chip">Student → Developer</span>
+        <span class="label-chip">Learning → Exploring → Creating</span>
+      </div>
+    </div>
+    <div class="about-text">
+      <p>I'm a Moroccan international student who moved to China to study Software Engineering, and somewhere along the way university stopped being just about programming. It became about figuring out a new country too — how to order food without knowing the language yet, how to read a metro map in characters I couldn't pronounce, how to make a room feel like home.</p>
+      <p>These past three years have also been about learning languages, meeting people from everywhere, traveling when I could afford to, reading more than I probably should when I have deadlines, taking photos of ordinary moments, and slowly figuring out what I actually want to build once all of this coursework turns into something real.</p>
+      <p>This site is my attempt to put all of that in one place — not a résumé, just the actual pieces.</p>
+    </div>
+  </div>
+</section>
+
+<section id="code" class="torn-edge">
+  <p class="section-tag">Sichuan University — Software Engineering, Year 3</p>
+
+
+  <div class="terminal">
+    <div class="terminal-bar"><span></span><span></span><span></span></div>
+    <div class="terminal-body" id="termBody">
+      <div>salma@world:~$ type 'help' to look around₊˚⊹♡₊˚⊹♡₊˚⊹♡₊˚⊹♡</div>
+    </div>
+    <div class="terminal-input-row">
+      <span>&gt;</span>
+      <input id="termInput" type="text" autocomplete="off" placeholder="try: help, about, music, books, travel">
+    </div>
+  </div>
+</section>
+
+<section id="music">
+  <p class="section-tag">Currently on the turntable</p>
+  <h2 class="section-title">Music</h2>
+  <p class="section-intro"> favorite artists🎧₊˚⊹♡</p>
+
+    <div class="vinyl-row">
+    <div class="vinyl">
+      <div class="vinyl-disc">
+        <img src="images/oasis.jpg" alt="Oasis" class="vinyl-img">
+      </div>
+      <p>[ oasis ]</p>
+    </div>
+    
+    <div class="vinyl">
+      <div class="vinyl-disc">
+        <img src="images/beatles.jpg" alt="The Beatles" class="vinyl-img">
+      </div>
+      <p>[ the beatles ]</p>
+    </div>
+    
+    <div class="vinyl">
+      <div class="vinyl-disc">
+        <img src="images/smiths.jpg" alt="The Smiths" class="vinyl-img">
+      </div>
+      <p>[ the smiths ]</p>
+    </div>
+    <div class="vinyl" id="cassette">
+      <div class="cassette-body"><div class="reel"></div><div class="reel"></div></div>
+      <p>▶ check my playlist🎧₊˚⊹♡ </p>
+    </div>
+
+  <div class="music-notes">
+    <div class="note-card">
+      <h3>Currently listening</h3>
+      <ul><li class="placeholder">[ song / artist — edit me ]</li></ul>
+    </div>
+    <div class="note-card">
+      <h3>Songs I've had on repeat</h3>
+      <ul>
+        <li class="placeholder">[ track 1 ]</li>
+        <li class="placeholder">[ track 2 ]</li>
+        <li class="placeholder">[ track 3 ]</li>
+      </ul>
+    </div>
+    <div class="note-card">
+      <h3>Songs that remind me of places</h3>
+      <ul>
+        <li class="placeholder">[ track — Morocco ]</li>
+        <li class="placeholder">[ track — Chengdu ]</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="books">
+  <p class="section-tag">The bookshelf</p>
+  <h2 class="section-title">What I've been reading</h2>
+  <p class="section-intro">Click a book to open it. Add more spines to the shelf as you go.</p>
+
+  <div class="shelf">
+    <div class="book">
+      <div class="book-cover">Almond</div>
+      <div class="book-meta">
+        <p class="status">Currently reading</p>
+        <p class="author">— edit author —</p>
+      </div>
+      <div class="book-note">a note on why I picked this one up, and what's staying with me so far.</div>
+    </div>
+    <div class="book">
+      <div class="book-cover">[ book title ]</div>
+      <div class="book-meta"><p class="status">Finished</p><p class="author">— edit author —</p></div>
+      <div class="book-note">short personal thought goes here.</div>
+    </div>
+    <div class="book">
+      <div class="book-cover">[ book title ]</div>
+      <div class="book-meta"><p class="status">On the shelf</p><p class="author">— edit author —</p></div>
+      <div class="book-note">short personal thought goes here.</div>
+    </div>
+  </div>
+</section>
+
+<section id="travel">
+  <p class="section-tag">Places that found me</p>
+  <h2 class="section-title">Passport stamps</h2>
+  <p class="section-intro">Click a stamp to open the journal entry. Add more as the list grows.</p>
+
+  <  <div class="stamps">
+    <div class="stamp">
+      <div class="flag">🇲🇦</div>
+      <div class="country">Morocco</div>
+      <div class="hint">home</div>
+      <div class="journal">
+        <p class="jrow">WHERE I'M FROM</p>
+        <img src="images/morocco.jpg" alt="morocco" class="journal-img">
+        <p>[ after a long time ❤︎ ]</p>
+      </div>
+    </div>
+
+    <div class="stamp">
+      <div class="flag">🇨🇳</div>
+      <div class="country">China</div>
+      <div class="hint">Chengdu, since 2023</div>
+      <div class="journal">
+        <p class="jrow">WHERE I STUDY</p>
+        <img src="images/china.jpg" alt="china" class="journal-img">
+        <p>[ special day ᡣ𐭩 ]</p>
+      </div>
+    </div>
+
+    <div class="stamp">
+      <div class="flag">🇶🇦</div>
+      <div class="country">Qatar</div>
+      <div class="hint">a visit</div>
+      <div class="journal">
+        <p class="jrow">A STOPOVER</p>
+        <img src="images/qatar.jpg" alt="Qatar layover" class="journal-img">
+        <p>[ unexpected day ᡣ𐭩 ]</p>
+      </div>
+    </div>
+
+    <div class="stamp" style="opacity:.6;border-style:dotted;">
+      <div class="flag">✈️</div>
+      <div class="country">next</div>
+      <div class="hint">to be stamped</div>
+    </div>
+  </div>
+</section>
+
+<section id="languages">
+  <p class="section-tag">Words I live in</p>
+  <h2 class="section-title">Languages</h2>
+  <div class="lang-grid">
+    <div class="lang-card">
+      <h3>🇲🇦 Arabic</h3>
+      <p class="phrase">"كيف داير؟" ❤︎</p>
+    </div>
+    <div class="lang-card">
+      <h3>🇫🇷 French</h3>
+      <p class="phrase">"ça va aller" ❤︎</p>
+    </div>
+    <div class="lang-card">
+      <h3>🇬🇧 English</h3>
+      <p class="phrase">ꨄ</p>
+    </div>
+    <div class="lang-card">
+      <h3>🇨🇳 Chinese</h3>
+      <p class="phrase">"还可以"ꨄ</p>
+    </div>
+  </div>
+</section>
+
+<section id="photos" class="torn-edge">
+  <p class="section-tag">Things I thought were worth remembering</p>
+  <h2 class="section-title">Photography</h2>
+  <p class="section-intro">Hover a photo for the memory behind it.</p>
+  <div class="photo-scatter">
+    <div class="pframe"><div class="washi"></div><div class="pph"><img src="images/photo1.jpg" alt="photo"></div><div class="cap">[ ❤︎ ]</div></div>
+    <div class="pframe"><div class="washi blue"></div><div class="pph"><img src="images/photo2.jpg" alt="photo"></div><div class="cap">[ ♥︎ ]</div></div>
+    <div class="pframe"><div class="washi pink"></div><div class="pph"><img src="images/photo3.jpg" alt="photo"></div><div class="cap">[ ♡ ]</div></div>
+    <div class="pframe"><div class="washi"></div><div class="pph"><img src="images/photo4.jpg" alt="photo"></div><div class="cap">[ ♡⃝ ]</div></div>
+    <div class="pframe"><div class="washi blue"></div><div class="pph"><img src="images/photo5.jpg" alt="photo"></div><div class="cap">[ ❥ ]</div></div>
+  </div>
+</section>
+
+<section id="camera-roll">
+  <p class="section-tag">Little moments, pinned up</p>
+  <h2 class="section-title">My camera roll</h2>
+  <p class="section-intro">A Pinterest-board wall of ordinary days. Add your own photos to <code>images/</code>.</p>
+  <div class="roll-grid">
+    <div class="roll-item"><div class="tape"></div><img src="images/roll1.jpg" alt="roll photo"><div class="rcap">[ caption ]</div></div>
+    <div class="roll-item"><div class="tape"></div><img src="images/roll2.jpg" alt="roll photo"><div class="rcap">[ caption ]</div></div>
+    <div class="roll-item"><div class="tape"></div><img src="images/roll3.jpg" alt="roll photo"><div class="rcap">[ caption ]</div></div>
+    <div class="roll-item"><div class="tape"></div><img src="images/roll4.jpg" alt="roll photo"><div class="rcap">[ caption ]</div></div>
+    <div class="roll-item"><div class="tape"></div><img src="images/roll5.jpg" alt="roll photo"><div class="rcap">[ caption ]</div></div>
+    <div class="roll-item"><div class="tape"></div><img src="images/roll6.jpg" alt="roll photo"><div class="rcap">[ caption ]</div></div>
+    <div class="roll-item"><div class="tape"></div><img src="images/roll7.jpg" alt="roll photo"><div class="rcap">[ caption ]</div></div>
+    <div class="roll-item"><div class="tape"></div><img src="images/roll8.jpg" alt="roll photo"><div class="rcap">[ caption ]</div></div>
+  </div>
+</section>
+
+<section id="film">
+  <div class="film-head">
+    <p class="section-tag">Developed at home</p>
+    <h2 class="section-title">Core memories</h2>
+  </div>
+  <div class="film-strip-wrap">
+    <div class="film-strip">
+      <div class="film-frame"><img src="images/film1.jpg" alt="film"><span>[ caption ]</span></div>
+      <div class="film-frame"><img src="images/film2.jpg" alt="film"><span>[ caption ]</span></div>
+      <div class="film-frame"><img src="images/film3.jpg" alt="film"><span>[ caption ]</span></div>
+      <div class="film-frame"><img src="images/film4.jpg" alt="film"><span>[ caption ]</span></div>
+      <div class="film-frame"><img src="images/film5.jpg" alt="film"><span>[ caption ]</span></div>
+      <div class="film-frame"><img src="images/film6.jpg" alt="film"><span>[ caption ]</span></div>
+      <div class="film-frame"><img src="images/film1.jpg" alt="film"><span>[ caption ]</span></div>
+      <div class="film-frame"><img src="images/film2.jpg" alt="film"><span>[ caption ]</span></div>
+      <div class="film-frame"><img src="images/film3.jpg" alt="film"><span>[ caption ]</span></div>
+      <div class="film-frame"><img src="images/film4.jpg" alt="film"><span>[ caption ]</span></div>
+      <div class="film-frame"><img src="images/film5.jpg" alt="film"><span>[ caption ]</span></div>
+      <div class="film-frame"><img src="images/film6.jpg" alt="film"><span>[ caption ]</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="likes">
+  <p class="section-tag">On my desk</p>
+  <h2 class="section-title">Small things I like</h2>
+  <div class="desk">
+    <div class="sticker" id="coffeeSticker">☕ dark coffee</div>
+    <div class="sticker">🧀 cheese, unreasonably</div>
+    <div class="sticker">🎶 music</div>
+    <div class="sticker">📚 books</div>
+    <div class="sticker">📸 photography</div>
+    <div class="sticker">🎨 DIY projects</div>
+    <div class="sticker">🏸 badminton</div>
+    <div class="sticker">✈️ traveling</div>
+    <div class="sticker">🌍 languages</div>
+    <div class="sticker">💻 coding</div>
+  </div>
+</section>
+
+<section id="currently">
+  <p class="section-tag">A live-ish snapshot</p>
+  <h2 class="section-title">Currently</h2>
+  <div class="now-grid">
+    <div class="now-card"><p class="tag">READING</p><p class="val">Almond</p></div>
+    <div class="now-card"><p class="tag">LISTENING</p><p class="val">[ artist / song ]</p></div>
+    <div class="now-card"><p class="tag">LEARNING</p><p class="val">C + Data Structures & Algorithms</p></div>
+    <div class="now-card"><p class="tag">ALSO LEARNING</p><p class="val">Python</p></div>
+    <div class="now-card"><p class="tag">WATCHING</p><p class="val">[ edit me ]</p></div>
+    <div class="now-card"><p class="tag">DREAMING ABOUT</p><p class="val">[ edit me ]</p></div>
+    <div class="now-card"><p class="tag">COFFEE STATUS</p><p class="val">probably needs another one</p></div>
+  </div>
+</section>
+
+<section id="facts">
+  <p class="section-tag">A few truths</p>
+  <h2 class="section-title">Things about me</h2>
+  <div class="facts-grid">
+    <div class="fact">I moved from Morocco to China for university.</div>
+    <div class="fact">I can spend way too long choosing one song.</div>
+    <div class="fact">I like taking photos of ordinary moments, not staged ones.</div>
+    <div class="fact">I collect little memories from books more than plots.</div>
+    <div class="fact">I'm simultaneously trying to become a developer, traveler, and a functioning university student.</div>
+    <div class="fact">My camera roll is 90% skies and coffee cups.</div>
+  </div>
+  <div id="secret">psst — things I probably shouldn't have put on my portfolio: [ edit this in later, or don't ]</div>
+</section>
+
+<section id="contact" class="torn-edge">
+  <p class="section-tag">Let's talk</p>
+  <h2 class="section-title">Get in touch</h2>
+  <div class="contact-links">
+    <a href="#" target="_blank">GitHub ↗</a>
+    <a href="#" target="_blank">LinkedIn ↗</a>
+    <a href="#" target="_blank">Instagram ↗</a>
+    <a href="mailto:your.email@example.com">Email</a>
+  </div>
+  <p class="closing hand">Still learning. Still wandering. Still making things.</p>
+</section>
+
+<footer>press "m" anywhere on this page for a small secret · built one section at a time</footer>
+
+<script>
+  document.querySelectorAll('section').forEach(s => s.classList.add('reveal'));
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('visible'); });
+  },{threshold:.15});
+  document.querySelectorAll('section').forEach(s=>io.observe(s));
+
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', ()=> navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a=> a.addEventListener('click', ()=> navLinks.classList.remove('open')));
+
+  document.querySelectorAll('.book').forEach(b=>{
+    b.addEventListener('click', ()=> b.classList.toggle('open'));
+  });
+
+  document.querySelectorAll('.stamp').forEach(s=>{
+    if(s.querySelector('.journal')){
+      s.addEventListener('click', ()=> s.classList.toggle('open'));
+    }
+  });
+
+    const cassette = document.getElementById('cassette');
+  cassette.addEventListener('click', ()=>{
+    // 1. Visual spin animation
+    cassette.querySelectorAll('.reel').forEach(reel=>{
+      reel.style.transition = 'transform 1.4s ease';
+      reel.style.transform = 'rotate(900deg)';
+      setTimeout(()=> { reel.style.transition='none'; reel.style.transform = 'rotate(0deg)'; }, 1450);
+    });
+
+    window.open('https://open.spotify.com/playlist/2KoOAudLfdl1E1sksBzME9?si=XG-3emQOQtKRyA0Gf_MOlQ', '_blank');
+  });
+
+  const facts = [
+    "I once picked a coffee shop in a new city purely because of how the cups looked.",
+    "My browser tabs are a crime scene right now.",
+    "I've rewritten this site's hero line more times than I'd like to admit.",
+    "There is a playlist on my phone named literally 'idk'."
+  ];
+  document.getElementById('coffeeSticker').addEventListener('click', ()=>{
+    alert(facts[Math.floor(Math.random()*facts.length)]);
+  });
+
+  document.addEventListener('keydown', (e)=>{
+    if(e.key.toLowerCase() === 'm'){
+      document.getElementById('secret').classList.toggle('show');
+    }
+  });
+
+  const termBody = document.getElementById('termBody');
+  const termInput = document.getElementById('termInput');
+  const responses = {
+    help: "available commands: about, projects, music, books, travel, coffee",
+    about: "third-year software engineering student, Sichuan University · from Morocco, based in China.",
+    projects: "scroll up to the timeline — the project list is still being written in.",
+    music: "check the music section below for the full playlist.",
+    books: "currently reading: Almond. check the bookshelf below.",
+    travel: "🇲🇦 → 🇶🇦 → 🇨🇳, with more stamps hopefully on the way.",
+    coffee: "dark, no sugar, probably a third cup today."
+  };
+  function printLine(text){
+    const d = document.createElement('div');
+    d.textContent = text;
+    termBody.appendChild(d);
+    termBody.scrollTop = termBody.scrollHeight;
+  }
+  termInput.addEventListener('keydown', (e)=>{
+    if(e.key === 'Enter'){
+      const cmd = termInput.value.trim().toLowerCase();
+      if(cmd){
+        printLine('salma@world:~$ ' + cmd);
+        printLine(responses[cmd] || 'command not found: ' + cmd + " — try 'help'");
+      }
+      termInput.value = '';
+    }
+  });
+
+  // sparkle cursor trail
+  document.addEventListener('mousemove', (e)=>{
+    if(Math.random() > 0.85){
+      const s = document.createElement('div');
+      s.className = 'sparkle';
+      s.textContent = ['✦','✧','★','☆','✿'][Math.floor(Math.random()*5)];
+      s.style.left = e.clientX + 'px';
+      s.style.top = e.clientY + 'px';
+      s.style.color = ['#f4b8d0','#c9b6e4','#a8d0e6','#f7e6a8'][Math.floor(Math.random()*4)];
+      document.body.appendChild(s);
+      setTimeout(()=> s.remove(), 900);
+    }
+  });
+</script>
+
+</body>
+</html>
